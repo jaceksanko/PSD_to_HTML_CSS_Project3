@@ -1,0 +1,57 @@
+@import 'flexboxgrid.scss';
+@import 'normalize.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700');
+
+$main-site-font: 'Montserrat', sans-serif;
+$menu-font: 'Open Sans', sans-serif;
+
+$color-action: #b88b58;
+
+html {
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    background-color:  #000000;
+}
+
+.navigation {
+    width: 100%;
+    //height: 100px;
+}
+
+.logo {
+    align-items: center;
+} 
+
+.menu {
+    color: white;
+    list-style-type: none;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    li {
+        font-family: $menu-font;
+        color:  #ffffff;
+        font-size: 0.875rem;/* Przybliżenie (wynika z podstawienia czcionki) */
+        font-weight: 700;
+        line-height: 100px;
+        padding: 0 10px;
+        border-bottom: 5px solid #000000;
+        transition: border-color 0.7s;
+        &:hover {
+            border-color: $color-action;
+        }
+    }
+}
