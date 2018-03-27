@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Uncomment and set these variables to customize the grid. */
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700");
 .container-fluid { margin-right: auto; margin-left: auto; padding-right: 2rem; padding-left: 2rem; }
@@ -311,20 +310,50 @@ textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
 /** Remove most spacing between table cells. */
 table { border-collapse: collapse; border-spacing: 0; }
 
+h1 { font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 4.5rem; font-weight: 700; line-height: 0.958; text-align: center; text-transform: uppercase; }
+
+h2 { font-family: "Montserrat", sans-serif; color: #000000; font-size: 1.875rem; font-weight: 600; line-height: 1; text-align: center; }
+
+h3 { font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 1.5rem; font-weight: 600; line-height: 0.75; text-align: center; text-transform: uppercase; }
+
+h4 { font-family: "Montserrat", sans-serif; color: #aeaeae; font-size: 0.875rem; font-weight: 600; line-height: 2.143; text-align: center; text-transform: uppercase; }
+
 html { font-size: 16px; }
 
 a { text-decoration: none; }
 
 .container { max-width: 1170px; margin: 0 auto; }
 
-header { background-color: #000000; }
+header { background-color: #000000; position: relative; }
 
+/* Menu and logo */
 .navigation { width: 100%; }
 
 .logo { -ms-flex-align: center; align-items: center; }
 
 .menu { color: white; list-style-type: none; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; display: -ms-flexbox; display: flex; margin: 0; padding: 0; }
 
-.menu li { font-family: "Open Sans", sans-serif; color: #ffffff; font-size: 0.875rem; /* Przybliżenie (wynika z podstawienia czcionki) */ font-weight: 700; line-height: 100px; padding: 0 10px; border-bottom: 5px solid #000000; transition: border-color 0.7s; }
+.menu li { font-family: "Open Sans", sans-serif; color: #ffffff; font-size: 0.875rem; font-weight: 700; line-height: 100px; padding: 0 10px; border-bottom: 5px solid #000000; transition: border-color 0.7s; }
 
 .menu li:hover { border-color: #b88b58; }
+
+/* jumbotron */
+.jumbotron { width: 100%; height: 100vh; background-image: url("../images/bg_img_01.png"); display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: space-evenly; justify-content: space-evenly; -ms-flex-align: center; align-items: center; }
+
+.jumbotron .jumbotron-box { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-align: center; align-items: center; }
+
+.jumbotron h1 { margin-bottom: 20px; }
+
+.jumbotron h1 span { color: #b88b58; }
+
+.jumbotron h3 { margin-top: 12px; margin-bottom: 45px; }
+
+.jumbotron button { border-radius: 20px; background-color: #b88b58; border-color: #b88b58; border-style: solid; width: 194px; height: 45px; text-transform: uppercase; color: white; font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 0.75rem; font-weight: 700; line-height: 1.5; text-align: center; }
+
+/* telephon button */
+.telephon-btn { position: absolute; right: 65px; bottom: -32.5px; border-radius: 50%; background-color: #b88b58; box-shadow: 1px 3px 8px 0px rgba(0, 0, 1, 0.24); width: 65px; height: 65px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+
+.telephon-btn img { color: #ffffff; width: 40px; height: 39px; }
+
+/* about us */
+.about-us-video { box-shadow: 6px 11px 24px 0px rgba(0, 0, 1, 0.42); }
