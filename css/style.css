@@ -312,17 +312,31 @@ table { border-collapse: collapse; border-spacing: 0; }
 
 h1 { font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 4.5rem; font-weight: 700; line-height: 0.958; text-align: center; text-transform: uppercase; }
 
-h2 { font-family: "Montserrat", sans-serif; color: #000000; font-size: 1.875rem; font-weight: 600; line-height: 1; text-align: center; }
+h2 { font-family: "Montserrat", sans-serif; color: #000000; font-size: 1.875rem; font-weight: 600; line-height: 1; text-align: center; text-transform: uppercase; }
 
 h3 { font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 1.5rem; font-weight: 600; line-height: 0.75; text-align: center; text-transform: uppercase; }
 
 h4 { font-family: "Montserrat", sans-serif; color: #aeaeae; font-size: 0.875rem; font-weight: 600; line-height: 2.143; text-align: center; text-transform: uppercase; }
 
+p { font-family: "Montserrat", sans-serif; color: #242424; font-size: 0.875rem; font-weight: 300; line-height: 1.786; text-align: left; }
+
 html { font-size: 16px; }
 
 a { text-decoration: none; }
 
+.btn-site { border-radius: 20px; background-color: #b88b58; border-color: #b88b58; border-style: solid; width: 194px; height: 45px; text-transform: uppercase; color: white; font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 0.75rem; font-weight: 700; line-height: 1.5; text-align: center; transition: all 0.7s; }
+
+.btn-site:focus { outline: 0; }
+
+.btn-site:hover { background-color: #000000; border-color: #000000; }
+
 .container { max-width: 1170px; margin: 0 auto; }
+
+.box-title { padding-bottom: 50px; }
+
+.box-title h2 { padding-top: 60px; margin: 0; }
+
+.box-title h4 { margin-top: 15px; margin-bottom: 0; }
 
 header { background-color: #000000; position: relative; }
 
@@ -348,12 +362,29 @@ header { background-color: #000000; position: relative; }
 
 .jumbotron h3 { margin-top: 12px; margin-bottom: 45px; }
 
-.jumbotron button { border-radius: 20px; background-color: #b88b58; border-color: #b88b58; border-style: solid; width: 194px; height: 45px; text-transform: uppercase; color: white; font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 0.75rem; font-weight: 700; line-height: 1.5; text-align: center; }
-
 /* telephon button */
-.telephon-btn { position: absolute; right: 65px; bottom: -32.5px; border-radius: 50%; background-color: #b88b58; box-shadow: 1px 3px 8px 0px rgba(0, 0, 1, 0.24); width: 65px; height: 65px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; }
+.telephon-btn { position: absolute; right: 65px; bottom: -32.5px; border-radius: 50%; background-color: #b88b58; box-shadow: 1px 3px 8px 0px rgba(0, 0, 1, 0.24); width: 65px; height: 65px; display: -ms-flexbox; display: flex; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; outline: none; transition: all 0.7s; }
+
+.telephon-btn:hover { background-color: #000000; }
 
 .telephon-btn img { color: #ffffff; width: 40px; height: 39px; }
 
 /* about us */
-.about-us-video { box-shadow: 6px 11px 24px 0px rgba(0, 0, 1, 0.42); }
+.about-us { background-color: #F4F4F4; }
+
+.about-us-text p { margin-bottom: 30px; }
+
+/* services */
+.services { background-color: #000000; padding-bottom: 60px; }
+
+.services .box-title h2 { color: white; }
+
+.services-card, .services-card-last { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-direction: column; flex-direction: column; border-left: 2px solid #bebebe; }
+
+.services-card h3, .services-card-last h3 { font-size: 1.125rem; line-height: 1.2; text-align: center; }
+
+.services-card p, .services-card-last p { font-size: 0.75rem; line-height: 1.75; text-align: center; color: #7e7e7e; }
+
+.services-card img, .services-card-last img { height: 65px; }
+
+.services-card-last { border-right: 2px solid #bebebe; }

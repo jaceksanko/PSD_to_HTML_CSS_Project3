@@ -25,6 +25,7 @@ h2 {
     font-weight: 600;
     line-height: 1;
     text-align: center;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -47,6 +48,15 @@ h4 {
     text-transform: uppercase;
 }
 
+p {
+    font-family: $main-site-font;
+    color:  #242424;
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 1.786;
+    text-align: left;
+}
+
 html {
     font-size: 16px;
 }
@@ -55,9 +65,46 @@ a {
     text-decoration: none;
 }
 
+.btn-site {
+    border-radius: 20px;
+    background-color:  $color-action;
+    border-color: $color-action;
+    border-style: solid;
+    width: 194px;
+    height: 45px;
+    text-transform: uppercase;
+    color: white;
+    font-family: $main-site-font;
+    color:  #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+    transition: all 0.7s;
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        background-color: #000000;
+        border-color: #000000;
+    }
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
+}
+
+.box-title {
+    padding-bottom: 50px;
+    h2 {
+        padding-top: 60px;
+        margin: 0;
+    }
+    h4 {
+        margin-top:15px;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -124,22 +171,6 @@ header {
         margin-top: 12px;
         margin-bottom: 45px;
     }
-    button {
-        border-radius: 20px;
-        background-color:  $color-action;
-        border-color: $color-action;
-        border-style: solid;
-        width: 194px;
-        height: 45px;
-        text-transform: uppercase;
-        color: white;
-        font-family: $main-site-font;
-        color:  #ffffff;
-        font-size: 0.75rem;
-        font-weight: 700;
-        line-height: 1.5;
-        text-align: center;
-    }
 }
 
 /* telephon button */
@@ -156,6 +187,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    outline: none;
+    transition: all 0.7s;
+    &:hover {
+        background-color: #000000;
+    }
     img {
         color:  #ffffff;
         width: 40px;
@@ -164,6 +200,48 @@ header {
 }
 
 /* about us */
-.about-us-video {
-    box-shadow: 6px 11px 24px 0px rgba(0, 0, 1, 0.42);
+.about-us {
+    background-color: $background-gray-site-color;
+}
+
+
+.about-us-text p {
+    margin-bottom: 30px;
+}
+
+/* services */
+
+.services {
+    background-color: #000000;
+    padding-bottom: 60px;
+    .box-title h2 {
+        color: white;
+    }
+}
+
+.services-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 2px solid #bebebe;
+    
+    h3 {
+        font-size: 1.125rem;
+        line-height: 1.2;
+        text-align: center;
+    }
+    p{ 
+        font-size: 0.75rem;
+        line-height: 1.75;
+        text-align: center;
+        color:  #7e7e7e;
+    }
+    img {        
+        height: 65px;
+    }
+}
+
+.services-card-last {
+    @extend .services-card;
+    border-right: 2px solid #bebebe;
 }
