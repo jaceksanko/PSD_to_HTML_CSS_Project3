@@ -1,5 +1,5 @@
 /* Uncomment and set these variables to customize the grid. */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:300,400,700");
 .container-fluid { margin-right: auto; margin-left: auto; padding-right: 2rem; padding-left: 2rem; }
 
 .row { box-sizing: border-box; display: -ms-flexbox; display: flex; -ms-flex: 0 1 auto; flex: 0 1 auto; -ms-flex-direction: row; flex-direction: row; -ms-flex-wrap: wrap; flex-wrap: wrap; margin-right: -1rem; margin-left: -1rem; }
@@ -318,6 +318,8 @@ h3 { font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 1.5rem; f
 
 h4 { font-family: "Montserrat", sans-serif; color: #aeaeae; font-size: 0.875rem; font-weight: 600; line-height: 2.143; text-align: center; text-transform: uppercase; }
 
+h5 { font-family: "Montserrat", sans-serif; color: #ffffff; font-size: 1.125rem; font-weight: 400; line-height: 1; text-align: center; text-transform: uppercase; }
+
 p { font-family: "Montserrat", sans-serif; color: #242424; font-size: 0.875rem; font-weight: 300; line-height: 1.786; text-align: left; }
 
 html { font-size: 16px; }
@@ -388,3 +390,69 @@ header { background-color: #000000; position: relative; }
 .services-card img, .services-card-last img { height: 65px; }
 
 .services-card-last { border-right: 2px solid #bebebe; }
+
+/*our projects*/
+.our-projects { background-color: #F4F4F4; }
+
+.our-projects .btn-site { margin: 0 auto; margin-bottom: 50px; }
+
+.tab { -ms-flex-pack: center; justify-content: center; }
+
+.tab ul { list-style: none; display: -ms-flexbox; display: flex; padding: 0 20px; background-color: #ededed; border-style: solid; border-width: 1px; border-color: #cfcfcf; border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-left-radius: 25px; border-bottom-right-radius: 25px; margin-bottom: 40px; }
+
+.tab li { padding: 20px; font-family: "Montserrat", sans-serif; font-size: 0.875rem; font-weight: 300; }
+
+.tab li:first-child { font-weight: 400; border-bottom: 5px solid #b88b58; }
+
+.tab li:hover { font-weight: 400; border-bottom: 5px solid #b88b58; }
+
+.tab-content-img-info { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; position: absolute; margin-right: 16px; padding: 0 10px; height: 100%; max-height: 168px; background-color: rgba(0, 0, 0, 0.7); opacity: 0; }
+
+.tab-content-img-info p { color: white; text-align: center; }
+
+.tab-content-img-info h5 { margin-bottom: 15px; }
+
+.tab-content .col-md-3 { position: relative; }
+
+.tab-content .col-md-3 img { margin-bottom: 30px; width: 100%; }
+
+.tab-content .col-md-3:hover .tab-content-img-info { opacity: 1; }
+
+/* our team */
+.our-team { background-image: url("../images/bg_image.png"); background-size: cover; }
+
+.our-team .box-title h2 { color: white; }
+
+.our-team .our-team-card { background-color: white; padding-bottom: 45px; }
+
+.our-team .our-team-card h5 { color: #242424; margin-bottom: 5px; }
+
+.our-team .our-team-card p { text-align: center; margin-top: 5px; }
+
+.our-team .our-team-card img { padding-top: 50px; padding-bottom: 16px; display: block; margin-left: auto; margin-right: auto; }
+
+.circle { background-color: #bebebe; width: 33px; height: 33px; border-radius: 50%; }
+
+.circle:hover { background-color: #b88b58; }
+
+.bg-Twitter_icon { width: 33px; height: 33px; background: url("../images/social_icon_sprites.png") -132px 0px; }
+
+.bg-Instagram_icon { width: 33px; height: 33px; background: url("../images/social_icon_sprites.png") -28px -1px; }
+
+.bg-LinkedIn_icon { width: 33px; height: 33px; background: url("../images/social_icon_sprites.png") -61px -2px; }
+
+.bg-Facebook_icon { width: 33px; height: 33px; background: url("../images/social_icon_sprites.png") 3px -2px; }
+
+.bg-Google_plus { width: 33px; height: 33px; background: url("../images/social_icon_sprites.png") -169px -1px; }
+
+.bg-YouTube_icon { width: 33px; height: 33px; background: url("../images/social_icon_sprites.png") -96px 0px; }
+
+.bg-Other_icon { width: 33px; height: 33px; background: url("../images/social_icon_sprites.png") -209px 4px; }
+
+.socia-media { display: -ms-flexbox; display: flex; -ms-flex-pack: distribute; justify-content: space-around; margin-left: 20px; margin-right: 20px; }
+
+.small-circle { width: 14px; height: 14px; border-radius: 50%; background-color: transparent; border: 3px solid #b88b58; margin: 10px; }
+
+.small-circle:hover { background-color: #b88b58; }
+
+.paginator { display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; margin-top: 50px; padding-bottom: 40px; }
