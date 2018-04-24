@@ -1664,6 +1664,9 @@ header {
   -ms-flex-align: center;
       align-items: center;
   background-color: white;
+  max-width: 255px;
+  padding: 0;
+  margin: 0 16px;
 }
 
 .price-box h2 {
@@ -1722,5 +1725,227 @@ header {
 .price-box .btn-site:hover {
   background-color: #b88b58;
   border-color: #b88b58;
+}
+
+/* premium */
+.premium-card ul {
+  list-style: none;
+  max-width: 450px;
+}
+
+.premium-card li {
+  position: relative;
+  margin-top: 30px;
+}
+
+.premium-card li::before {
+  content: url(../images/icon.png);
+  position: absolute;
+  left: -40px;
+  z-index: 100;
+  top: 0;
+  width: 30px;
+}
+
+.premium-card h2 {
+  color: #242424;
+  font-size: 1.313rem;
+  font-weight: 700;
+  line-height: 1;
+  text-align: left;
+  margin: 0 0 10px 0;
+}
+
+.premium-card h4 {
+  color: #5b5b5b;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.786;
+  text-align: left;
+  text-transform: inherit;
+  margin: 0;
+}
+
+.premium .container {
+  border-bottom: 1px solid  #cfcfcf;
+}
+
+.premium .btn-site {
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+/* some facts */
+.some-facts {
+  background-color: black;
+}
+
+.some-facts .box-title h2 {
+  color: white;
+}
+
+.some-facts .some-facts-box {
+  padding-bottom: 80px;
+}
+
+.some-facts .some-facts-box h4 {
+  color: #b88b58;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+  position: relative;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.some-facts .some-facts-box h4::before {
+  content: "";
+  position: absolute;
+  left: 46%;
+  z-index: 100;
+  bottom: 0;
+  width: 20px;
+  height: 2px;
+  background: #7e7e7e;
+}
+
+.some-facts .some-facts-box h2 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.some-facts .some-facts-box p {
+  color: #7e7e7e;
+  font-size: 0.75rem;
+  font-weight: 300;
+  line-height: 1.75;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+/* share */
+.share-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.par-share {
+  color: #aeaeae;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 2.143;
+  text-align: left;
+  margin: 20px 65px 20px 20px;
+}
+
+.social-icon {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.social-icon p {
+  color: #aeaeae;
+  font-size: 0.625rem;
+  font-weight: 700;
+  line-height: 2.5;
+  text-align: left;
+  margin: 20px 7px;
+}
+
+.social-icon .circle .bg-Twitter_icon {
+  background-color: #34c5f0;
+  border-radius: 50%;
+}
+
+.social-icon .circle .bg-Instagram_icon {
+  background-color: #127cb4;
+  border-radius: 50%;
+}
+
+.social-icon .circle .bg-Facebook_icon {
+  background-color: #336297;
+  border-radius: 50%;
+}
+
+.social-icon .circle .bg-Google_plus {
+  background-color: #e74237;
+  border-radius: 50%;
+}
+
+.social-icon .circle .bg-pinterest {
+  background-color: #b71c29;
+  border-radius: 50%;
+}
+
+.bg-pinterest {
+  width: 33px;
+  height: 33px;
+  background-image: url("../images/Pinterest.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* contact us */
+.contact-us {
+  background-color: #F4F4F4;
+}
+
+.contact-us-box {
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+.contact-us-box .col-md-4 {
+  max-width: 540px;
+}
+
+.contact-us-box .btn-site {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 75px;
+}
+
+.contact-us-box input {
+  border: none;
+  border-bottom: 1px solid rgba(164, 164, 164, 0.88);
+  background-color: transparent;
+  font-family: Montserrat;
+  color: #9e9e9e;
+  font-size: 0.813rem;
+  line-height: 1.923;
+  text-align: left;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.inputs-name-email {
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+}
+
+input[name=subject] {
+  width: 100%;
+  padding-top: 40px;
+}
+
+input[name=message] {
+  width: 100%;
+  padding-top: 85px;
+}
+
+.btn-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
