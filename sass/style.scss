@@ -220,6 +220,13 @@ header {
 /* about us */
 .about-us {
     background-color: $background-gray-site-color;
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .btn-site {
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -293,6 +300,7 @@ header {
         font-family: $main-site-font;
         font-size: 0.875rem;
         font-weight: 300;
+        text-transform: uppercase; 
         &:first-child {
             font-weight: 400;
             border-bottom: 5px solid $color-action;
@@ -484,6 +492,9 @@ header {
 .client-logos {
     .row {
         margin: 45px 0;
+        img {
+            margin: 10px;
+        }
     }
 }
 
@@ -491,7 +502,11 @@ header {
 .price {
     background-color: $background-gray-site-color;
     padding-bottom: 45px;
+    .row {
+        justify-content: space-around;
+    }
 }
+
 .price-box {
     display: flex;
     flex-direction: column;
@@ -616,6 +631,8 @@ header {
     }
     .some-facts-box {
         padding-bottom: 80px;
+        display: flex;
+        justify-content: space-around;
         h4 {
             color:  $color-action;
             font-size: 3rem;
@@ -766,8 +783,8 @@ input[name=message] {
     display: flex;
     border-radius: 3px;
     background-color:  #ffffff;
-    width: 540px;
-    height: 343px;
+    max-width: 540px;
+    height: auto;
     margin: 35px 30px;
     justify-content: center;
     align-content: center;
@@ -861,6 +878,9 @@ input[name=message] {
         padding-top: 15px;
         padding-bottom: 30px;
     }
+    .footer-box {
+        justify-content: space-around;
+    }
     .socia-media-copyright{
         display: flex;
         flex-direction: column;
@@ -878,15 +898,15 @@ input[name=message] {
     p {
         margin: 0;
         color:  #7e7e7e;
-        font-size: 0.75rem;/* Przybliżenie (wynika z podstawienia czcionki) */
+        font-size: 0.75rem;
         font-weight: 300;
-        line-height: 1.75;/* Przybliżenie (wynika z podstawienia czcionki) */
+        line-height: 1.75;
         text-align: left;
     }
     .newsletter {
         border-radius: 3px;
         background-color:  #373737;
-        width: 350px;
+        max-width: 350px;
         height: 198px;
         display: flex;
         flex-direction: column;
@@ -939,3 +959,126 @@ input[name=message] {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    /* services */
+
+    .services-card {
+        border-left: none;
+        border-bottom: 2px solid #bebebe;
+        img {
+            padding-top: 10px;
+        }
+    }
+
+    .services-card-last {
+        border-right: none;
+        border-bottom: none;
+    }
+
+    /* our project */
+    .our-projects {
+        .box-title {
+            padding-bottom: 25px;
+        }
+    }
+    .tab {
+        width: 100%;
+        ul {
+            width: 60%;
+            display: inline-block;
+            li {
+                width: 90%;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+.row {
+    margin: 0;
+    padding: 10px;
+}
+/* Menu and logo */
+    .menu {
+        flex-direction: column;
+        display: flex;
+        li {
+            line-height: 2;
+        }
+    }
+/* jumbotron  */
+    .jumbotron {
+        h1 {
+            font-size: 2.25rem;
+        }
+        h3 {
+            font-size: 0.75rem;
+        }
+    }
+/* our project */
+    .tab {
+        width: 100%;
+    }
+    .our-projects {
+        .tab-content {
+            .row {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    .tab-content-img-info {
+        margin-right: 0;
+    }
+/* out team */
+    .our-team .container div:nth-of-type(2){        
+        justify-content: space-around;
+        .col-md-4 {
+            margin-top: 20px;
+        }
+    }
+
+/* about us */
+    .about-us {
+        
+        img {
+            width: 100%;
+        }
+        .about-us-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+/* price */
+    .price {
+        .row {
+            padding: 0;
+        }
+        .price-box {
+            margin-top: 10px;
+        }
+    }
+/* premium */
+    .premium {
+        img {
+            width: 100%;
+            
+        }
+    }
+/* map */
+    .map-box {
+        padding: 20px;
+    }
+
+/* footer */
+    .footer-box {
+        .col-md-4 {
+            margin-top: 10px;
+        }
+        .circle {
+            margin: 5px;
+        }
+    }
+}
