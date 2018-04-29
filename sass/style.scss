@@ -120,9 +120,16 @@ a {
         padding-top: 60px;
         margin: 0;
     }
-    h4 {
+    h3 {
         margin-top:15px;
         margin-bottom: 0;
+        font-family: $main-site-font;
+        color:  #aeaeae;
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 2.143;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
 
@@ -151,6 +158,7 @@ header {
     padding: 0;
     li {
         font-family: $menu-font;
+        text-transform: uppercase;
         color:  #ffffff;
         font-size: 0.875rem;
         font-weight: 700;
@@ -169,6 +177,7 @@ header {
 .jumbotron {
     width: 100%;
     height: 100vh;
+    min-height: 400px;
     background-image: url('../images/bg_img_01.png');
     display: flex;
     flex-direction: column;
@@ -248,7 +257,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border-left: 2px solid #bebebe;
+    border-left: 2px solid #7e7e7e;
     
     h3 {
         font-size: 1.125rem;
@@ -300,7 +309,11 @@ header {
         font-family: $main-site-font;
         font-size: 0.875rem;
         font-weight: 300;
-        text-transform: uppercase; 
+        text-transform: uppercase;
+        border-right: 1px solid #cfcfcf;
+        &:last-of-type {
+            border-right: none;
+        }
         &:first-child {
             font-weight: 400;
             border-bottom: 5px solid $color-action;
@@ -492,8 +505,10 @@ header {
 .client-logos {
     .row {
         margin: 45px 0;
+        align-items: center;
         img {
             margin: 10px;
+            height: 100%;
         }
     }
 }
@@ -754,6 +769,9 @@ header {
         text-align: left;
         text-transform: uppercase;
         padding-bottom: 10px;
+        &:focus {
+            outline: 0;
+        } 
     }
 }
 .inputs-name-email {
@@ -875,7 +893,7 @@ input[name=message] {
     background-color: black;
     position: relative;
     .container {
-        padding-top: 15px;
+        padding-top: 30px;
         padding-bottom: 30px;
     }
     .footer-box {
@@ -889,11 +907,14 @@ input[name=message] {
     }
     .copyright {
         margin: 0 20px;
-        color:  #ffffff;
-        font-size: 0.875rem;
-        font-weight: 400;
-        line-height: 1.786;
-        text-align: left; 
+        p {
+            color:  #ffffff;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.786;
+            text-align: left; 
+        }
+        
     }
     p {
         margin: 0;
@@ -922,6 +943,9 @@ input[name=message] {
             text-align: center;
             text-transform: uppercase;
             padding-bottom: 10px;
+            &:focus {
+                outline: 0;
+            }
         }
         .row {
             justify-content: center;
@@ -931,8 +955,11 @@ input[name=message] {
             display: flex;
             justify-content: center;
         }
-    }
-    
+    } 
+}
+
+.copyright-mobile {
+    display: none;
 }
 
 .scrol-up-btn {
@@ -960,11 +987,11 @@ input[name=message] {
 }
 
 @media only screen and (max-width: 768px) {
+    
     /* services */
-
     .services-card {
         border-left: none;
-        border-bottom: 2px solid #bebebe;
+        border-bottom: 2px solid #7e7e7e;
         img {
             padding-top: 10px;
         }
@@ -977,6 +1004,9 @@ input[name=message] {
 
     /* our project */
     .our-projects {
+        ul {
+            padding: 25px;
+        }
         .box-title {
             padding-bottom: 25px;
         }
@@ -991,6 +1021,47 @@ input[name=message] {
             }
         }
     }
+    /* our team */
+    .our-team-card {
+        max-width: 295px;
+    }
+    /* price */
+    
+        .price-box {
+            margin: 20px 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    /* share */
+    .share-box {
+        p {
+            font-size: 0.5rem;
+            margin: 20px 5px;
+        }
+    }
+
+    .contact-us .box-title {
+        h3 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+    }
+    /* footer */
+    .socia-media-copyright {
+        max-width: 290px;
+    }
+
+    .scrol-up-btn {
+        left: 1.8%;
+        top: -23.5px;
+        width: 45px;
+        height: 45px;
+        img {
+            width: 20px;
+            height: 15px;
+        }
+    }
+    
 }
 
 @media (max-width: 991.98px) {
@@ -1009,7 +1080,7 @@ input[name=message] {
 /* jumbotron  */
     .jumbotron {
         h1 {
-            font-size: 2.25rem;
+            font-size: 1.8rem;
         }
         h3 {
             font-size: 0.75rem;
@@ -1020,6 +1091,9 @@ input[name=message] {
         width: 100%;
     }
     .our-projects {
+        li {
+            border-right: 0;
+        }
         .tab-content {
             .row {
                 display: flex;
@@ -1031,10 +1105,15 @@ input[name=message] {
         margin-right: 0;
     }
 /* out team */
-    .our-team .container div:nth-of-type(2){        
+    .our-team {
+        .socia-media .circle{
+            margin-right: 5px;
+        }
+        .container div:nth-of-type(2){        
         justify-content: space-around;
         .col-md-4 {
             margin-top: 20px;
+        }
         }
     }
 
@@ -1078,7 +1157,34 @@ input[name=message] {
             margin-top: 10px;
         }
         .circle {
-            margin: 5px;
+            margin: 3px;
         }
+    }
+    .copyright-desk {
+        display: none;
+    }
+
+    .copyright-mobile {
+        display: block;
+        margin: 0 20px;
+        p {
+            color:  #ffffff;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.786;
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    /* Menu and logo */
+    .menu {
+        li {
+            font-size: 0.7rem;
+        }
+    }
+    .footer-box {
+        margin-top: 20px;
     }
 }

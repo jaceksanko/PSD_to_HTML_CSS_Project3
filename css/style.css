@@ -1224,9 +1224,16 @@ a {
   margin: 0;
 }
 
-.box-title h4 {
+.box-title h3 {
   margin-top: 15px;
   margin-bottom: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #aeaeae;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 2.143;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 header {
@@ -1259,6 +1266,7 @@ header {
 
 .menu li {
   font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 700;
@@ -1276,6 +1284,7 @@ header {
 .jumbotron {
   width: 100%;
   height: 100vh;
+  min-height: 400px;
   background-image: url("../images/bg_img_01.png");
   display: -ms-flexbox;
   display: flex;
@@ -1374,7 +1383,7 @@ header {
       justify-content: center;
   -ms-flex-direction: column;
       flex-direction: column;
-  border-left: 2px solid #bebebe;
+  border-left: 2px solid #7e7e7e;
 }
 
 .services-card h3, .services-card-last h3 {
@@ -1435,6 +1444,11 @@ header {
   font-size: 0.875rem;
   font-weight: 300;
   text-transform: uppercase;
+  border-right: 1px solid #cfcfcf;
+}
+
+.tab li:last-of-type {
+  border-right: none;
 }
 
 .tab li:first-child {
@@ -1658,10 +1672,13 @@ header {
 /* client logos */
 .client-logos .row {
   margin: 45px 0;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .client-logos .row img {
   margin: 10px;
+  height: 100%;
 }
 
 /* price */
@@ -1950,6 +1967,10 @@ header {
   padding-bottom: 10px;
 }
 
+.contact-us-box input:focus {
+  outline: 0;
+}
+
 .inputs-name-email {
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -2090,7 +2111,7 @@ input[name=message] {
 }
 
 .footer .container {
-  padding-top: 15px;
+  padding-top: 30px;
   padding-bottom: 30px;
 }
 
@@ -2112,6 +2133,9 @@ input[name=message] {
 
 .footer .copyright {
   margin: 0 20px;
+}
+
+.footer .copyright p {
   color: #ffffff;
   font-size: 0.875rem;
   font-weight: 400;
@@ -2154,6 +2178,10 @@ input[name=message] {
   padding-bottom: 10px;
 }
 
+.footer .newsletter input:focus {
+  outline: 0;
+}
+
 .footer .newsletter .row {
   -ms-flex-pack: center;
       justify-content: center;
@@ -2165,6 +2193,10 @@ input[name=message] {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+}
+
+.copyright-mobile {
+  display: none;
 }
 
 .scrol-up-btn {
@@ -2200,7 +2232,7 @@ input[name=message] {
   /* services */
   .services-card, .services-card-last {
     border-left: none;
-    border-bottom: 2px solid #bebebe;
+    border-bottom: 2px solid #7e7e7e;
   }
   .services-card img, .services-card-last img {
     padding-top: 10px;
@@ -2210,6 +2242,9 @@ input[name=message] {
     border-bottom: none;
   }
   /* our project */
+  .our-projects ul {
+    padding: 25px;
+  }
   .our-projects .box-title {
     padding-bottom: 25px;
   }
@@ -2222,6 +2257,39 @@ input[name=message] {
   }
   .tab ul li {
     width: 90%;
+  }
+  /* our team */
+  .our-team-card {
+    max-width: 295px;
+  }
+  /* price */
+  .price-box {
+    margin: 20px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  /* share */
+  .share-box p {
+    font-size: 0.5rem;
+    margin: 20px 5px;
+  }
+  .contact-us .box-title h3 {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  /* footer */
+  .socia-media-copyright {
+    max-width: 290px;
+  }
+  .scrol-up-btn {
+    left: 1.8%;
+    top: -23.5px;
+    width: 45px;
+    height: 45px;
+  }
+  .scrol-up-btn img {
+    width: 20px;
+    height: 15px;
   }
 }
 
@@ -2242,7 +2310,7 @@ input[name=message] {
   }
   /* jumbotron  */
   .jumbotron h1 {
-    font-size: 2.25rem;
+    font-size: 1.8rem;
   }
   .jumbotron h3 {
     font-size: 0.75rem;
@@ -2250,6 +2318,9 @@ input[name=message] {
   /* our project */
   .tab {
     width: 100%;
+  }
+  .our-projects li {
+    border-right: 0;
   }
   .our-projects .tab-content .row {
     display: -ms-flexbox;
@@ -2261,6 +2332,9 @@ input[name=message] {
     margin-right: 0;
   }
   /* out team */
+  .our-team .socia-media .circle {
+    margin-right: 5px;
+  }
   .our-team .container div:nth-of-type(2) {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2300,7 +2374,31 @@ input[name=message] {
     margin-top: 10px;
   }
   .footer-box .circle {
-    margin: 5px;
+    margin: 3px;
+  }
+  .copyright-desk {
+    display: none;
+  }
+  .copyright-mobile {
+    display: block;
+    margin: 0 20px;
+  }
+  .copyright-mobile p {
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.786;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  /* Menu and logo */
+  .menu li {
+    font-size: 0.7rem;
+  }
+  .footer-box {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
